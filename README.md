@@ -40,7 +40,13 @@ De beoordelingen zijn echt en handmatig gekozen omdat ze de kernbelofte van de
 pagina bewijzen: geen schade, op tijd, en een factuur die klopt met de offerte.
 
 Foto's in `public/images/echt/` zijn echte werffoto's van Chrono Dem.
-De overige beelden zijn gegenereerd voor deze demo.
+De overige beelden zijn gegenereerd voor deze demo. De vrachtwagens daarop
+dragen de eigen belettering van Chrono Dem, overgenomen van hun logo: Chrono
+in marineblauw, Dem in lichtblauw, met de wereldbol erachter.
+
+`public/video/hero.mp4` is een stille clip van zes seconden, gemaakt uit de
+herofoto. Hij speelt automatisch in de hero met de foto als poster, zodat de
+eerste weergave nog altijd een geoptimaliseerde afbeelding is.
 
 ## Let op
 

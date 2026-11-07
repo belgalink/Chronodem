@@ -99,8 +99,20 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 580px"
-                className="object-cover"
+                className="object-cover object-[40%_50%]"
               />
+              <video
+                className="absolute inset-0 h-full w-full object-cover object-[40%_50%]"
+                poster="/images/hero-lift.webp"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-hidden="true"
+              >
+                <source src="/video/hero.mp4" type="video/mp4" />
+              </video>
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-5 -left-3 rounded-sm border border-white/12 bg-navy-900/92 px-5 py-4 backdrop-blur-sm sm:left-5">
