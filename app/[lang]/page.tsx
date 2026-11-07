@@ -92,32 +92,31 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           </div>
 
           <div className="reveal relative flex flex-col justify-center" style={{ animationDelay: "140ms" }}>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-md lg:aspect-auto lg:min-h-[30rem] lg:flex-1">
-              <Image
-                src="/images/hero-lift.webp"
-                alt={s.hero.imageAlt}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 580px"
-                className="object-cover object-[40%_50%]"
-              />
-              <video
-                className="absolute inset-0 h-full w-full object-cover object-[40%_50%]"
-                poster="/images/hero-lift.webp"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="metadata"
+            <div className="relative">
+              <div
+                className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[115%] w-[115%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/16 blur-[90px]"
                 aria-hidden="true"
-              >
-                <source src="/video/hero.mp4" type="video/mp4" />
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent" />
+              />
+              <Image
+                src="/images/truck.webp"
+                alt={s.hero.imageAlt}
+                width={1900}
+                height={962}
+                priority
+                sizes="(max-width: 1024px) 100vw, 720px"
+                className="h-auto w-full max-w-none drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)] lg:-ml-[9%] lg:w-[118%]"
+              />
+              <div
+                className="pointer-events-none mx-auto -mt-3 h-8 w-[78%] rounded-[100%] bg-navy-950/90 blur-2xl"
+                aria-hidden="true"
+              />
             </div>
-            <div className="absolute -bottom-5 -left-3 rounded-sm border border-white/12 bg-navy-900/92 px-5 py-4 backdrop-blur-sm sm:left-5">
-              <p className="eyebrow text-rust-400">{s.hero.badgeLine1}</p>
-              <p className="font-display mt-1 text-xl font-extrabold">{s.hero.badgeLine2}</p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-start">
+              <span className="rounded-sm border border-white/14 bg-navy-900/70 px-4 py-2.5 backdrop-blur-sm">
+                <span className="eyebrow block text-rust-400">{s.hero.badgeLine1}</span>
+                <span className="font-display mt-0.5 block text-lg font-extrabold">{s.hero.badgeLine2}</span>
+              </span>
+              <span className="text-[12.5px] leading-snug text-white/45">{s.hero.truckNote}</span>
             </div>
           </div>
         </div>
@@ -449,13 +448,18 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <section className="relative overflow-hidden bg-navy-950 text-white">
         <div className="grid lg:grid-cols-2">
           <div className="relative min-h-[300px] lg:min-h-[520px]">
-            <Image
-              src="/images/echt/lift-real.webp"
-              alt={s.services.items[2].alt}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
+            <video
+              className="absolute inset-0 h-full w-full object-cover object-[40%_50%]"
+              poster="/images/hero-lift.webp"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+              aria-label={s.services.items[2].alt}
+            >
+              <source src="/video/hero.mp4" type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 via-navy-950/15 to-navy-950" />
           </div>
           <div className="flex items-center px-5 py-16 md:px-10 lg:py-20">

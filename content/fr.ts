@@ -32,9 +32,10 @@ export const fr: Site = {
     ctaPrimary: "Calculez votre volume et votre prix",
     ctaSecondary: "Ou appelez",
     fud: ["Gratuit et sans engagement", "Réponse dans l'heure", "Prix fixe à l'avance", "Entièrement assuré"],
-    imageAlt: "Camion de déménagement Chrono Dem avec monte-meubles jusqu'au balcon d'un appartement",
+    imageAlt: "Le camion de déménagement avec monte-meubles de Chrono Dem",
     badgeLine1: "Monte-meubles",
     badgeLine2: "jusqu'au 8e étage",
+    truckNote: "Notre propre camion et notre propre lift. Rien de loué.",
   },
 
   proof: {

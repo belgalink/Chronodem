@@ -52,9 +52,10 @@ export const nl = {
     ctaPrimary: "Bereken uw volume en krijg uw prijs",
     ctaSecondary: "Of bel",
     fud: ["Gratis en vrijblijvend", "Antwoord binnen het uur", "Vaste prijs op voorhand", "Volledig verzekerd"],
-    imageAlt: "Verhuiswagen van Chrono Dem met ladderlift tot op het balkon van een appartement",
+    imageAlt: "De eigen verhuiswagen met ladderlift van Chrono Dem",
     badgeLine1: "Ladderlift tot",
     badgeLine2: "de 8e verdieping",
+    truckNote: "Onze eigen wagen en lift. Geen huurmateriaal.",
   },
 
   proof: {

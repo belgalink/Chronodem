@@ -39,14 +39,22 @@ chronodem.be, de Google-pagina van het bedrijf en hun Trustlocal-profiel.
 De beoordelingen zijn echt en handmatig gekozen omdat ze de kernbelofte van de
 pagina bewijzen: geen schade, op tijd, en een factuur die klopt met de offerte.
 
+`public/images/truck.webp` is de eigen liftwagen van Chrono Dem, de
+achtergrondfoto van hun huidige homepage. Vrijgestaan van de witte
+achtergrond, opgeschaald naar 4K en daarna teruggebracht, met de onderkant
+weggefadet naar het marineblauw zodat hij op de grond lijkt te staan.
+
 Foto's in `public/images/echt/` zijn echte werffoto's van Chrono Dem.
 De overige beelden zijn gegenereerd voor deze demo. De vrachtwagens daarop
 dragen de eigen belettering van Chrono Dem, overgenomen van hun logo: Chrono
 in marineblauw, Dem in lichtblauw, met de wereldbol erachter.
 
-`public/video/hero.mp4` is een stille clip van zes seconden, gemaakt uit de
-herofoto. Hij speelt automatisch in de hero met de foto als poster, zodat de
-eerste weergave nog altijd een geoptimaliseerde afbeelding is.
+`public/video/hero.mp4` is een stille clip van zes seconden. Hij speelt in de
+liftsectie, met een foto als poster.
+
+De achtergrondfoto van de reviewsectie op hun huidige site
+(`AVIS-CLIENT.avif`) is bewust niet overgenomen: daar staan een vrouw en een
+meisje op.
 
 ## Let op
 
