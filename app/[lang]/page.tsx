@@ -30,8 +30,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               {s.hero.titleTop}
               <br />
               <span className="text-blue-400">{s.hero.titleAccent}</span>
-              <br />
-              {s.hero.titleBottom}
             </h1>
 
             <p className="mt-6 max-w-[42rem] text-[15.5px] leading-relaxed text-white/72 sm:text-base">{s.hero.sub}</p>
@@ -154,8 +152,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 delay={(i % 3) * 70}
                 className="flex flex-col rounded-md border border-navy-800/10 bg-white p-5 transition-[border-color,transform] hover:-translate-y-0.5 hover:border-navy-800/22"
               >
-                <p className="font-display text-[15px] leading-snug font-bold text-navy-800">{r.tag}</p>
-                <p className="mt-3 flex-1 text-[14.5px] leading-relaxed text-ink-700">{r.text}</p>
+                {r.tag && (
+                  <p className="font-display text-[15px] leading-snug font-bold text-navy-800">{r.tag}</p>
+                )}
+                <p className={`flex-1 text-[14.5px] leading-relaxed text-ink-700 ${r.tag ? "mt-3" : ""}`}>{r.text}</p>
                 <div className="rule-t mt-5 flex items-center justify-between gap-3 pt-4">
                   <div className="flex items-center gap-2.5">
                     <span className="font-display flex h-9 w-9 items-center justify-center rounded-full bg-navy-800 text-[13px] font-bold text-white">
@@ -397,95 +397,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         </div>
       </section>
 
-      {/* ───────────────────────── STEPS ───────────────────────── */}
-      <section id="werkwijze" className="scroll-mt-20 bg-sand-100 py-20 md:py-28">
-        <div className="shell">
-          <div className="flex items-start justify-between gap-6">
-            <div className="max-w-[33rem]">
-              <Eyebrow>{s.steps.eyebrow}</Eyebrow>
-              <h2 className="mt-4 text-[2rem] sm:text-[2.6rem]">{s.steps.title}</h2>
-            </div>
-            <SectionIndex n="07" />
-          </div>
-
-          <div className="mt-11 grid gap-10 lg:grid-cols-[1fr_380px] lg:items-start">
-            <ol className="rule-t">
-              {s.steps.items.map((st, i) => (
-                <Reveal
-                  as="li"
-                  key={st.n}
-                  delay={i * 70}
-                  className="rule-b grid grid-cols-[52px_1fr] gap-x-4 py-6 sm:grid-cols-[80px_1fr] sm:gap-x-6"
-                >
-                  <span className="font-display tabnum text-[2rem] leading-none font-extrabold text-navy-800/18 sm:text-[2.8rem]">
-                    {st.n}
-                  </span>
-                  <div>
-                    <h3 className="text-xl sm:text-[1.45rem]">{st.title}</h3>
-                    <p className="mt-2 max-w-[52ch] text-[14.5px] leading-relaxed text-ink-700">{st.text}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </ol>
-
-            <Reveal delay={120} className="relative aspect-[4/5] overflow-hidden rounded-md lg:sticky lg:top-24">
-              <Image
-                src="/images/wrap-detail.webp"
-                alt={s.gallery.items[0].alt}
-                fill
-                sizes="(max-width: 1024px) 100vw, 380px"
-                className="object-cover"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950/90 to-transparent p-6">
-                <p className="font-quote text-[1.35rem] leading-tight text-white italic">{s.pain.kicker}</p>
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ───────────────────────── LIFT ───────────────────────── */}
-      <section className="relative overflow-hidden bg-navy-950 text-white">
-        <div className="grid lg:grid-cols-2">
-          <div className="relative min-h-[300px] lg:min-h-[520px]">
-            <video
-              className="absolute inset-0 h-full w-full object-cover object-[40%_50%]"
-              poster="/images/hero-lift.webp"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="none"
-              aria-label={s.services.items[2].alt}
-            >
-              <source src="/video/hero.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 via-navy-950/15 to-navy-950" />
-          </div>
-          <div className="flex items-center px-5 py-16 md:px-10 lg:py-20">
-            <div className="max-w-[37rem]">
-              <Eyebrow tone="light">{s.lift.eyebrow}</Eyebrow>
-              <h2 className="mt-4 text-[1.9rem] sm:text-[2.4rem]">{s.lift.title}</h2>
-              <p className="mt-5 text-[15px] leading-relaxed text-white/70">{s.lift.text}</p>
-              <ul className="mt-7 flex flex-wrap gap-2.5">
-                {s.lift.points.map((p) => (
-                  <li key={p} className="rounded-xs border border-white/18 px-3 py-1.5 text-[12.5px] font-semibold text-white/80">
-                    {p}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href={`${servicesBase}/${s.services.items[2].slug}`}
-                className="group mt-8 inline-flex items-center gap-2.5 rounded-sm bg-rust-500 px-6 py-3.5 text-[14.5px] font-bold text-white transition-colors hover:bg-rust-600"
-              >
-                {s.lift.cta}
-                <Arrow className="transition-transform group-hover:translate-x-0.5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ───────────────────────── ZONE + PARTNERS ───────────────────────── */}
       <section id="werkgebied" className="scroll-mt-20 bg-sand-50 py-20 md:py-28">
         <div className="shell">
@@ -496,7 +407,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                   <Eyebrow>{s.zone.eyebrow}</Eyebrow>
                   <h2 className="mt-4 text-[2rem] sm:text-[2.5rem]">{s.zone.title}</h2>
                 </div>
-                <SectionIndex n="08" />
+                <SectionIndex n="07" />
               </div>
               <p className="mt-5 max-w-[39rem] text-[15px] leading-relaxed text-ink-700">{s.zone.text}</p>
 
@@ -557,7 +468,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                 <Eyebrow>{s.faq.eyebrow}</Eyebrow>
                 <h2 className="mt-4 max-w-[26rem] text-[2rem] sm:text-[2.4rem]">{s.faq.title}</h2>
               </div>
-              <SectionIndex n="09" />
+              <SectionIndex n="08" />
             </div>
             <a
               href={BIZ.phoneHref}

@@ -34,7 +34,6 @@ export const nl = {
   nav: {
     items: [
       { label: "Diensten", href: "#diensten" },
-      { label: "Werkwijze", href: "#werkwijze" },
       { label: "Beoordelingen", href: "#beoordelingen" },
       { label: "Werkgebied", href: "#werkgebied" },
       { label: "Vragen", href: "#vragen" },
@@ -46,8 +45,7 @@ export const nl = {
   hero: {
     eyebrow: "Verhuisfirma uit Ninove",
     titleTop: "Op één dag verhuisd.",
-    titleAccent: "Zonder één kras,",
-    titleBottom: "zonder verrassing op uw factuur.",
+    titleAccent: "Zonder één kras.",
     sub: "Schrik dat uw kast beschadigd raakt, dat de verhuizers niet komen opdagen of dat de rekening hoger uitvalt dan beloofd? Ons eigen team wikkelt alles in dekens en folie, demonteert en hermonteert uw meubels en werkt met een eigen ladderlift tot de 8e verdieping. De prijs die u vooraf krijgt, is de prijs die u betaalt.",
     ctaPrimary: "Bereken uw volume en krijg uw prijs",
     ctaSecondary: "Of bel",
@@ -74,7 +72,7 @@ export const nl = {
 
   reviews: {
     eyebrow: "Beoordelingen",
-    title: "255 gezinnen en bedrijven gaven hun verhuis al uit handen. Dit schreven ze achteraf.",
+    title: "Bekijk de recensies van 255 klanten",
     intro:
       "Hieronder staan echte beoordelingen van Google en Trustlocal. Niet de mooiste, wel die welke de drie dingen bewijzen waar u vandaag over twijfelt: geen schade, op tijd, en een factuur die klopt met de offerte.",
     items: [
@@ -135,7 +133,7 @@ export const nl = {
         text: "Dit is de tweede keer dat ik dit bedrijf inschakel en ik ben net zo tevreden als de eerste keer. Ze gaan heel voorzichtig om met breekbare spullen en antieke meubels. Je kunt ze volledig vertrouwen.",
       },
       {
-        tag: "Vorige week nog",
+        tag: "",
         name: "Jan Windey",
         date: "november 2026",
         source: "Google",
@@ -360,41 +358,6 @@ export const nl = {
     cta: "Stuur dit volume door en ontvang mijn prijs",
     note: "Een schatting, geen offerte. Wij komen altijd nog langs om het na te kijken, en dát is de prijs die geldt.",
     summaryTitle: "Uw lijst",
-  },
-
-  steps: {
-    eyebrow: "Werkwijze",
-    title: "Van eerste telefoon tot laatste doos, in vier stappen",
-    items: [
-      {
-        n: "01",
-        title: "U belt of berekent uw volume online",
-        text: "Dat laatste duurt twee minuten. U krijgt dezelfde dag nog antwoord, meestal binnen het uur.",
-      },
-      {
-        n: "02",
-        title: "Wij komen gratis kijken wat er moet mee",
-        text: "Een inschatting op afstand loopt altijd mis. Daarom staan wij liever even bij u in de gang.",
-      },
-      {
-        n: "03",
-        title: "U krijgt een vaste prijs, zwart op wit",
-        text: "Met het aantal verhuizers, de wagen, de uren en de lift erin. Geen voorschot nodig.",
-      },
-      {
-        n: "04",
-        title: "Wij verhuizen, u zet koffie",
-        text: "Wij staan op het afgesproken uur voor de deur. 's Avonds staat alles op zijn plaats en is alles weer in elkaar gezet.",
-      },
-    ],
-  },
-
-  lift: {
-    eyebrow: "Liftservice",
-    title: "Vijfde verdieping, smalle trap, draaideur? Daar stopt uw verhuis niet.",
-    text: "Onze eigen ladderlift gaat tot en met de 8e verdieping. Alles gaat langs het raam of het balkon naar buiten: sneller, en met veel minder risico op schade aan uw trappenhal, uw muren en uw meubels. U kunt de lift ook los boeken als u de rest zelf doet.",
-    points: ["Tot de 8e verdieping", "Met opgeleide operator", "Ook apart te huren"],
-    cta: "Vraag uw prijs voor de liftservice",
   },
 
   gallery: {

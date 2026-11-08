@@ -14,7 +14,6 @@ export const fr: Site = {
   nav: {
     items: [
       { label: "Services", href: "#diensten" },
-      { label: "Méthode", href: "#werkwijze" },
       { label: "Avis", href: "#beoordelingen" },
       { label: "Zone", href: "#werkgebied" },
       { label: "Questions", href: "#vragen" },
@@ -26,8 +25,7 @@ export const fr: Site = {
   hero: {
     eyebrow: "Déménageur à Ninove",
     titleTop: "Déménagé en une journée.",
-    titleAccent: "Sans casse,",
-    titleBottom: "sans surprise sur la facture.",
+    titleAccent: "Sans casse.",
     sub: "Peur que votre armoire soit abîmée, que les déménageurs ne viennent pas ou que la note soit plus salée que prévu ? Notre propre équipe emballe tout dans des couvertures et du film, démonte et remonte vos meubles et dispose d'un monte-meubles jusqu'au 8e étage. Le prix annoncé à l'avance est celui que vous payez.",
     ctaPrimary: "Calculez votre volume et votre prix",
     ctaSecondary: "Ou appelez",
@@ -54,7 +52,7 @@ export const fr: Site = {
 
   reviews: {
     eyebrow: "Avis clients",
-    title: "255 familles et entreprises nous ont déjà confié leur déménagement. Voici ce qu'elles en ont écrit.",
+    title: "Consultez les avis de 255 clients",
     intro:
       "Ci-dessous, de vrais avis Google et Trustlocal. Pas les plus flatteurs, mais ceux qui prouvent les trois choses qui vous inquiètent aujourd'hui : rien de cassé, à l'heure, et une facture conforme au devis.",
     items: [
@@ -340,41 +338,6 @@ export const fr: Site = {
     cta: "Envoyer ce volume et recevoir mon prix",
     note: "Une estimation, pas un devis. Nous passons toujours vérifier sur place, et c'est ce prix-là qui vaut.",
     summaryTitle: "Votre liste",
-  },
-
-  steps: {
-    eyebrow: "Méthode",
-    title: "Du premier appel au dernier carton, en quatre étapes",
-    items: [
-      {
-        n: "01",
-        title: "Vous appelez ou calculez votre volume en ligne",
-        text: "Cela prend deux minutes. Vous avez une réponse le jour même, le plus souvent dans l'heure.",
-      },
-      {
-        n: "02",
-        title: "Nous passons voir gratuitement ce qui doit partir",
-        text: "Une estimation à distance se trompe toujours. Nous préférons venir quelques minutes chez vous.",
-      },
-      {
-        n: "03",
-        title: "Vous recevez un prix fixe, noir sur blanc",
-        text: "Avec le nombre de déménageurs, le camion, les heures et le lift. Pas d'acompte.",
-      },
-      {
-        n: "04",
-        title: "Nous déménageons, vous faites le café",
-        text: "Nous sommes devant la porte à l'heure convenue. Le soir, tout est à sa place et remonté.",
-      },
-    ],
-  },
-
-  lift: {
-    eyebrow: "Lift service",
-    title: "Cinquième étage, escalier étroit, porte tournante ? Votre déménagement ne s'arrête pas là.",
-    text: "Notre monte-meubles va jusqu'au 8e étage inclus. Tout sort par la fenêtre ou le balcon : plus rapide, et avec beaucoup moins de risques pour votre cage d'escalier, vos murs et vos meubles. Vous pouvez aussi réserver le lift seul si vous faites le reste vous-même.",
-    points: ["Jusqu'au 8e étage", "Avec opérateur formé", "Location séparée possible"],
-    cta: "Demandez votre prix pour le lift service",
   },
 
   gallery: {

@@ -49,8 +49,10 @@ De overige beelden zijn gegenereerd voor deze demo. De vrachtwagens daarop
 dragen de eigen belettering van Chrono Dem, overgenomen van hun logo: Chrono
 in marineblauw, Dem in lichtblauw, met de wereldbol erachter.
 
-`public/video/hero.mp4` is een stille clip van zes seconden. Hij speelt in de
-liftsectie, met een foto als poster.
+`public/video/hero.mp4` is een stille clip van zes seconden. Hij staat nu
+nergens op de pagina: de liftsectie waar hij in speelde is geschrapt. Hetzelfde
+geldt voor `public/images/wrap-detail.webp`. Beide blijven staan zodat ze
+zonder nieuw werk ergens anders ingezet kunnen worden.
 
 De achtergrondfoto van de reviewsectie op hun huidige site
 (`AVIS-CLIENT.avif`) is bewust niet overgenomen: daar staan een vrouw en een
